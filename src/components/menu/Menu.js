@@ -6,9 +6,8 @@ export default class Menu extends React.Component {
             <nav id="menu" className="menu">
                 <ul>
                     <li><a className="menu__link" href="/">À Propos</a></li>
-                    <li><a className="menu__link" href="/">Projets</a></li>
-                    <li><a className="menu__link" href="/">Actualités</a></li>
-                    <li><a className="menu__link" href="/">Contact</a></li>
+                    <li><a className="menu__link" href="#projets">Projets</a></li>
+                    <li><a className="menu__link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         )

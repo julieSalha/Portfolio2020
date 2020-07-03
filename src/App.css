@@ -226,6 +226,23 @@ header .hello_title {
   background-repeat: no-repeat;
 }
 
+.block-demo button {
+  opacity: 0;
+
+}
+
+.block-demo, .block-demo button {
+  transition: 0.3s;
+}
+
+.block-demo:hover {
+  background-color: rgba(255,255, 255, 1);
+}
+
+.block-demo:hover button{
+  opacity: 1;
+}
+
 /* Block demo Nature */
 
 .block-demo--nature {
