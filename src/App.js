@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
+import Header from './blocks/header/Header.js'
+import Welcome from './blocks/welcome/Welcome.js'
+import Projects  from './blocks/projects-home/Projects.js'
+import Contact  from './blocks/contact/Contact.js'
+import Footer from './blocks/footer/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Welcome />
+      <Projects />
+      <Contact />
+      <Footer />
+    </React.Fragment>
   );
 }
 
 export default App;
+
+ReactDOM.render(<App />, document.getElementById('portfolio'));
