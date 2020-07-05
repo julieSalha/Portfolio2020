@@ -15,6 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   /*taille en em prend comme référence la taille de son parent le plus proche*/
+  padding: 10px;
 }
 
 img {
@@ -51,7 +52,7 @@ h2 {
 }
 
 h3 {
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-family: "Pistilli";
   font-weight: normal;
   font-size: 3rem;
@@ -64,6 +65,10 @@ h4 {
 
 h4, p {
   color: #22181c;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 label {
@@ -85,6 +90,7 @@ button, input[type="submit"] {
   border-image: none;
   border-style: none;
   border: 2px solid #fe0100;
+  border-radius: 5px;
 }
 
 input[type="submit"] {
@@ -172,7 +178,8 @@ header .hello_title {
 
 .welcome__description {
   position: relative;
-  top: -50px;
+  top: -60px;
+  padding:10px;
 }
 
 .translation {
@@ -183,6 +190,58 @@ header .hello_title {
 
 .translation__lang {
   color: #FFFFFF;
+}
+
+/* Skills */
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 260px;
+  border: 2px solid;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.skill__title {
+  position: relative;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.skill__title::first-letter {
+  letter-spacing: 5px;
+  color: #FFFFFF;
+
+}
+
+.skill__title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -7px;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.skill--integration::first-letter {
+  letter-spacing: 8px;
+}
+
+.skill--integration::before {
+  left: -9px;
+  top: 2px;
+  height: 25px;
+  width: 25px;
 }
 
 /* Projects */
@@ -224,6 +283,7 @@ header .hello_title {
   text-align: center;
   z-index: 1;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 .block-demo button {

@@ -10,7 +10,7 @@ import Barbara from '../../components/project-demo-five/Barbara.js'
 export default class Projects extends React.Component {
     render() {
         return (
-            <section class="projects" id="projets">
+            <section class="projects" id="projects">
                 <TitleProject />
                 <div class="projects__content">
                     <Nature />
