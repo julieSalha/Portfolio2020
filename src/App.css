@@ -101,15 +101,56 @@ input[type="submit"] {
 
 /* Header */
 
+.header__burger-button {
+  background-color: #FFFFFF;
+  color: #fe0100;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: none;
+}
+
+.header__burger-line {
+  display: block;
+  margin-bottom: 10px;
+  height: 3px;
+  background: #fe0100;
+  color: #fe0100;
+  border-radius: 20px;
+}
+
+.header-visuals {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 60px;
+}
+
+/* .burger-menu {
+  padding-top: 30px;
+  width: 40px;
+  height: 60px;
+  background-image: url(/static/media/menu.c11c672b.svg);
+  background-repeat: no-repeat;
+  font-size: 0.8rem;
+  color: #fe0100;
+  text-transform: uppercase;
+} */
+
 header nav > ul {
-  padding: 25px 10px 20px 40px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
+/* padding: 25px 10px 20px 40px; */
+
+
 header nav > ul li {
-  display: inline-block;
+  display: block;
   margin: 5px 25px;
   list-style: none;
+  text-align: left;  
 }
 
 header nav > ul li a {
@@ -160,13 +201,21 @@ header .hello_title {
 .go-home {
   display: inline-block;
   position: relative;
-  top: 30px;
+  top: -10px;
   margin: 10px 10px 10px 40px;
 }
 
-.menu {
+/* top: 30px; */
+
+
+/* .menu {
   display: inline-block;
   margin-left: 70px;
+} */
+
+.menu {
+  display: block;
+  margin: auto;
 }
 
 /* Welcome */
@@ -176,11 +225,27 @@ header .hello_title {
   text-align: center;
 }
 
+.welcome__title {
+  font-size: 2.5rem;
+  letter-spacing: 0;
+}
+
 .welcome__description {
+  position: relative;
+  top: -40px;
+  padding: 10px;
+}
+
+.welcome__text, .projects__text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* .welcome__description {
   position: relative;
   top: -60px;
   padding:10px;
-}
+} */
 
 .translation {
   position: absolute;
@@ -190,12 +255,20 @@ header .hello_title {
 
 .translation__lang {
   color: #FFFFFF;
+  font-size: 1rem;
 }
 
 /* Skills */
 
+.skills__title, .projects__title {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+
 .skills__content {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -203,7 +276,8 @@ header .hello_title {
 .skill {
   width: 260px;
   border: 2px solid;
-  margin: 20px;
+  /* margin: 20px; */
+  margin: 20px auto;
   padding: 15px;
   border-radius: 5px;
 }
@@ -273,9 +347,12 @@ header .hello_title {
 }
 
 .block-demo {
-  margin: 40px 60px;
+  display: block;
+ /*  margin: 40px 60px; */
+  margin: 20px;
   padding: 140px 10px 10px;
-  width: 250px;
+  /* width: 250px; */
+  width: 100%;
   height: 250px;
   border: 2px solid #fe0100;
   background-color: #FFFFFF;
@@ -344,6 +421,14 @@ header .hello_title {
   background-size: 90%;
 }
 
+/* Block demo Havea */
+
+.block-demo--havea {
+  background-image: url(./img/clients/havea.svg);
+  background-position: center 25%;
+  background-size: 80%;
+}
+
 /* Contact */
 
 .contact {
@@ -352,7 +437,8 @@ header .hello_title {
 
 .form-contact {
   margin: 20px auto 30px;
-  width: 50%;
+  /* width: 50%; */
+  width: 100%;
   -webkit-box-shadow: 4px 7px 16px 2px rgba(0,0,0,0.35);
   -moz-box-shadow: 4px 7px 16px 2px rgba(0,0,0,0.35);
   box-shadow: 4px 7px 16px 2px rgba(0,0,0,0.35);
@@ -402,6 +488,7 @@ input {
 }
 
 textarea {
+  width: 100%;
   padding: 10px;
 }
 
@@ -434,4 +521,67 @@ footer {
   margin: 0 5px;
   font-size: 1rem;
   color: #FFFFFF;
+}
+
+/* Content display */
+
+.hidden {
+  display: none;
+}
+
+
+/* Responsive Mobile First */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .header__burger-menu {
+    display: none;
+  }
+
+  .header-visuals, .menu {
+    display: inline-block;
+  }
+
+  header nav > ul li {
+    display: inline-block;
+    margin: 5px 20px;
+  }
+
+  .welcome__description {
+    position: relative;
+    top: -60px;
+    padding:10px;
+  }
+
+  .welcome__title {
+    font-size: 5.5rem;
+    letter-spacing: 0;
+  }
+
+  .welcome__text, .projects__text {
+    font-size: 2rem;
+  } 
+
+  .skills__title, .projects__title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .skills__content {
+    flex-direction: row;
+  }
+
+  .skill {
+    width: 25%;
+    margin: 20px;
+  }
+
+  .block-demo {
+    margin: 40px 60px;
+    width: 250px;
+  }
+
+  .form-contact {
+    width: 50%;
+  }
 }

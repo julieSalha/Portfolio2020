@@ -9,12 +9,11 @@ export default class Welcome extends React.Component {
             <section id="welcome" className="welcome">
                 <img className="welcome__image" src={beach2} alt="ocean" />
                 <Translation />
-                <div class="welcome__description">
+                <div className="welcome__description">
                     <h1 className="welcome__title">Bonjour !</h1>
                     <p className="welcome__text">Je suis Julie SALHA, développeuse front-end basée à Paris, sensible à l'UX et l'accessibilité.</p>
                     <p className="welcome__text">Que puis-je pour vous ?</p>
                 </div>
-
             </section>
         )
     }

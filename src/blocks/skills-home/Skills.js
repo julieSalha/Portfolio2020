@@ -12,9 +12,9 @@ import Basics from '../../components/skill-basics/Basics.js'
 export default class Skills extends React.Component {
     render() {
         return (
-            <section class="skills" id="skills">
+            <section className="skills" id="skills">
                 <TitleSkills />
-            <div class="skills__content">
+            <div className="skills__content">
                 <Integration />
                 <Front />
                 <Responsive />

@@ -4,7 +4,7 @@ import ContactForm from '../../components/form-contact/ContactForm.js'
 export default class Contact extends React.Component {
     render() {
         return (
-            <section class="contact" id="contact">
+            <section className="contact" id="contact">
                 <ContactForm />
             </section>
         )
