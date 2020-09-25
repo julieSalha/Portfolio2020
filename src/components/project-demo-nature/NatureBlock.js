@@ -1,7 +1,7 @@
 import React from 'react'
 //import Button from '../../components/button/Button.js'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Data_nature from '../../components/project-demo-one/Data_nature.js'
+import Data_nature from './/Data_nature.js'
 
 export default class NatureBlock extends React.Component {
     render() {
